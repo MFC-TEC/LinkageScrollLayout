@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="wvlv"
+            android:text="WebView vs ListView" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="wvrv"
+            android:text="WebView vs RecyclerView" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="wvsv"
+            android:text="WebView vs ScrollView" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="wvgv"
+            android:text="WebView vs GridView" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="rvwv"
+            android:text="RecyclerView vs WebView" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="lvrv"
+            android:text="ListView vs RecyclerView" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="gvrv"
+            android:text="GridView vs RecyclerView" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="rvsv"
+            android:text="RecyclerView vs ScrollView" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="svgv"
+            android:text="ScrollView vs GridView" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lorien.linkagescroll.LinkageScrollLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WVLVActivity">
+
+    <com.lorien.linkagescroll.view.LWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+
+    <com.lorien.linkagescroll.view.LScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/scroll_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#82ccb3"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </com.lorien.linkagescroll.view.LScrollView>
+
+</com.lorien.linkagescroll.LinkageScrollLayout>
