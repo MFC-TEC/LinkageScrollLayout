@@ -5,7 +5,7 @@ It's easy to use and powerful, as it support any two child view in it.
 
 Support 'API LEVEL >= 19'
 
-[Download APK](https://github.com/baiduapp-tec/LinkageScrollLayout/tree/master/app-debug.apk)
+[Download APK](https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/lsl-debug.apk)
 
 ### Top is H5, Bottom is NA
 
@@ -32,29 +32,29 @@ Support 'API LEVEL >= 19'
 ### Top is NA, Bottom is H5
 * RecyclerView & WebView
     <div class='row'>
-        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-RVWV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/NA-H5-RVWV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
     </div>
 
 ## Tos is NA, Bottom is NA
 
 * RecyclerView & ScrollView
     <div class='row'>
-        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-RVSV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/NA-NA-RVSV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
     </div>
 
 * ListView & RecyclerView
     <div class='row'>
-        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-LVRV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/NA-NA-LVRV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
     </div>
 
 * GridView & ReyclerView
     <div class='row'>
-        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-GVRV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/NA-NA-GVRV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
     </div>
 
 * ScrollView & GridView
     <div class='row'>
-        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-SVGV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/NA-NA-SVGV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
     </div>
     
 # Usage
@@ -92,7 +92,7 @@ Support 'API LEVEL >= 19'
 
 #### UI Interface
 
-you can use LinkageScrollListener to listen LinkageScroll Event<br><br>.
+you can use LinkageScrollListener to listen LinkageScroll Event.<br><br>
 
 example:
 ```java
