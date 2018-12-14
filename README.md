@@ -1,4 +1,7 @@
+#### [中文版文档](https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/README-CN.md)
+
 # LinkageScrollLayout
+
 A container which supports two view scrolling in it.
 
 It's easy to use and powerful, as it support any two child view in it.
@@ -132,6 +135,6 @@ mLinkageLayout.addLinkageScrollListener(new LinkageScrollListenerAdapter() {
 # Contact & Help
 Please feel free to contact me if there is any proble when using LinkageScrollLayout
 * email: zhanghao43@baidu.com
-* blog: https://blog.csdn.net/h_zhang
+* weibo: https://weibo.com/u/5894400455
 
 
