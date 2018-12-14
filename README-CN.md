@@ -95,7 +95,7 @@ LinkageScrollLayout易用且强大，它可以支持任意类型的子view.
 * 你可以使用 LinkageScrollListener 去监听联动scroll容器的滚动事件.
 * LinkageScrollListenerAdapter为LinkageScrollListener的空实现，如果业务Listener仅仅关心其中的某些事件，可以直接使用LinkageScrollListenerAdapter，而不用去实现接口LinkageScrollListener中的所有方法。
 
-example:
+示例:
 ```java
 mLinkageLayout.addLinkageScrollListener(new LinkageScrollListenerAdapter() {
     @Override
