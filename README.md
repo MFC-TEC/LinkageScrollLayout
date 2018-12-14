@@ -1,5 +1,5 @@
 # LinkageScrollLayout
-A container which supports any two view scrolling in it.
+A container which supports two view scrolling in it.
 
 It's easy to use and powerful, as it support any two child view in it.
 
@@ -7,24 +7,56 @@ Support 'API LEVEL >= 19'
 
 [Download APK](https://github.com/baiduapp-tec/LinkageScrollLayout/tree/master/app-debug.apk)
 
-* Top is NA, Bottom is H5
+### Top is H5, Bottom is NA
+
+* WebView & RecyclerView
     <div class='row'>
-        <img src='http://srain-github.qiniudn.com/ultra-ptr/store-house-string-array.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
-        <img src='http://srain-github.qiniudn.com/ultra-ptr/store-house-string.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-WVRV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
     </div>
 
-* Top is H5, Bottom is NA
+* WebView & ListView
     <div class='row'>
-        <img src='http://srain-github.qiniudn.com/ultra-ptr/store-house-string-array.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
-        <img src='http://srain-github.qiniudn.com/ultra-ptr/store-house-string.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-WVLV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
     </div>
 
-* Top is NA, Bottom is NA
+* WebView & GridView
     <div class='row'>
-        <img src='http://srain-github.qiniudn.com/ultra-ptr/store-house-string-array.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
-        <img src='http://srain-github.qiniudn.com/ultra-ptr/store-house-string.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-WVGV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
     </div>
 
+* WebView & ScrollView
+    <div class='row'>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-WVSV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+    </div>
+
+### Top is NA, Bottom is H5
+* RecyclerView & WebView
+    <div class='row'>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-RVWV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+    </div>
+
+## Tos is NA, Bottom is NA
+
+* RecyclerView & ScrollView
+    <div class='row'>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-RVSV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+    </div>
+
+* ListView & RecyclerView
+    <div class='row'>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-LVRV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+    </div>
+
+* GridView & ReyclerView
+    <div class='row'>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-GVRV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+    </div>
+
+* ScrollView & GridView
+    <div class='row'>
+        <img src='https://github.com/baiduapp-tec/LinkageScrollLayout/blob/master/gif/H5-NA-SVGV.gif' width="300px" style='border: #f1f1f1 solid 1px'/>
+    </div>
+    
 # Usage
 #### in xml
 ```xml
@@ -60,32 +92,39 @@ Support 'API LEVEL >= 19'
 
 #### UI Interface
 
-you can user LinkageScrollListener to listen LinkageScroll Event<br><br>.
+you can use LinkageScrollListener to listen LinkageScroll Event<br><br>.
 
 example:
 ```java
-mLinkageLayout = findViewById(R.id.root);
-// ...
-// ...
-mLinkageLayout.addLinkageScrollListener(new LinkageScrollListener() {
+mLinkageLayout.addLinkageScrollListener(new LinkageScrollListenerAdapter() {
     @Override
     public void onTopJustIn(PosIndicator posIndicator) {
         // when top view move into layout, this function will be called
+        Log.d(TAG, "onTopJustIn");
     }
 
     @Override
     public void onTopJustOut(PosIndicator posIndicator) {
         // when top view move out of layout, this function will be called
+        Log.d(TAG, "onTopJustOut");
     }
 
     @Override
     public void onBottomJustIn(PosIndicator posIndicator) {
         // when bottom view move into layout, this function will be called
+        Log.d(TAG, "onBottomJustIn");
     }
 
     @Override
     public void onBottomJustOut(PosIndicator posIndicator) {
         // when bottom view move out of layout, this function will be called
+        Log.d(TAG, "onBottomJustOut");
+    }
+
+    @Override
+    public void onPositionChanged(PosIndicator posIndicator) {
+        // when The position of TopView and BottomView has changed, this function will be called
+        Log.d(TAG, "onPositionChanged, postion: " + posIndicator.getCurrentPos());
     }
 });
 ```
