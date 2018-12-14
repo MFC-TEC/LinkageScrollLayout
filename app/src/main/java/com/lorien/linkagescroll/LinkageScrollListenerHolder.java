@@ -156,4 +156,15 @@ public class LinkageScrollListenerHolder implements LinkageScrollListener {
             }
         } while ((current = current.mNext) != null);
     }
+
+    @Override
+    public void onPositionChanged(PosIndicator posIndicator) {
+        LinkageScrollListenerHolder current = this;
+        do {
+            final LinkageScrollListener handler = current.getHandler();
+            if (handler != null) {
+                handler.onPositionChanged(posIndicator);
+            }
+        } while ((current = current.mNext) != null);
+    }
 }

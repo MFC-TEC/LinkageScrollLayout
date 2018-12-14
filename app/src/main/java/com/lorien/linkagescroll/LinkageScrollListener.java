@@ -4,8 +4,7 @@ package com.lorien.linkagescroll;
  * Interface definition for a callback to be invoked when the position of layout container
  * has been changed.
  *
- * @author zhanghao43
- * @since 2017/12/14.
+ * @author lorienzhang
  */
 public interface LinkageScrollListener {
 
@@ -36,4 +35,11 @@ public interface LinkageScrollListener {
      * @param posIndicator position indicator
      */
     void onBottomJustOut(PosIndicator posIndicator);
+
+    /**
+     * The position of TopView and BottomView has changed.
+     *
+     * @param posIndicator
+     */
+    void onPositionChanged(PosIndicator posIndicator);
 }

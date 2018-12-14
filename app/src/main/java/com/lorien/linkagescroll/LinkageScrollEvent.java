@@ -4,7 +4,7 @@ package com.lorien.linkagescroll;
  * Interface definition for a callback to be invoked
  * when the children in LinkageScrollLayout {@link LinkageScrollLayout} has been scrolled.
  *
- * @author lirienzhang
+ * @author lorienzhang
  */
 public interface LinkageScrollEvent {
     /**

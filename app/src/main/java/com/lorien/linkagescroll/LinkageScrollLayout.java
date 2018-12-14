@@ -419,23 +419,37 @@ public class LinkageScrollLayout extends ViewGroup {
             mHasSendCancelEvent = true;
             sendCancelEvent();
         }
-
+        if (Math.abs(offsetY) <= 0) {
+            return;
+        }
         int toPos = mPosIndicator.getCurrentPos() + (int) offsetY;
         // 边界检查：startPos <= toPos <= endPos
         toPos = mPosIndicator.checkPosBoundary(toPos);
         mPosIndicator.setCurrentPos(toPos);
-
         int distanceY = toPos - mPosIndicator.getLastPos();
         offsetChildren(distanceY);
 
+        if (mPosIndicator.hasJustLeftEndPos()) {
+            if (mLinkageScrollListener.hasHandler()) {
+                mLinkageScrollListener.onBottomJustIn(mPosIndicator);
+            }
+        }
         if (mPosIndicator.hasJustLeftStartPos()) {
             if (mLinkageScrollListener.hasHandler()) {
                 mLinkageScrollListener.onTopJustIn(mPosIndicator);
             }
         }
+        if (mLinkageScrollListener.hasHandler()) {
+            mLinkageScrollListener.onPositionChanged(mPosIndicator);
+        }
         if (mPosIndicator.hasJustBackStartPos()) {
             if (mLinkageScrollListener.hasHandler()) {
                 mLinkageScrollListener.onTopJustOut(mPosIndicator);
+            }
+        }
+        if (mPosIndicator.hasJustBackEndPos()) {
+            if (mLinkageScrollListener.hasHandler()) {
+                mLinkageScrollListener.onBottomJustOut(mPosIndicator);
             }
         }
     }
