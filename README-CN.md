@@ -1,6 +1,6 @@
 # LinkageScrollLayout
 
-LinkageScrollLayout 是一个容器，实现两个子view联动scroll效果.
+LinkageScrollLayout 是一个联动容器，目的实现两个子view联动scroll效果.
 
 LinkageScrollLayout易用且强大，它可以支持任意类型的子view.
 
